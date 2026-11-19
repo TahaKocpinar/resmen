@@ -175,13 +175,13 @@ def kira(repo: Repo, bedel, oran, sozlesme_yili: int | None = None) -> Sonuc:
     oran = Decimal(str(oran))
     yeni = tl(bedel * (1 + oran / 100))
     s = Sonuc("Kira artışı üst sınırı", dayanak=["6098-344-tufe"])
-    s.satirlar += [("Mevcut kira", para(bedel)), ("TÜFE 12 aylık ortalama değişim", f"%{oran}"),
+    s.satirlar += [("Mevcut kira", para(bedel)), ("TÜFE 12 aylık ortalama değişim", "%" + format(oran.normalize(), "f").replace(".", ",")),
                    ("Yeni kira en fazla", para(yeni)), ("Artış en fazla", para(yeni - bedel))]
     s.tutar = yeni
     if sozlesme_yili is not None and sozlesme_yili >= 5:
         s.dayanak.append("6098-344-bes-yil")
         s.notlar.append("Kira ilişkisi 5 yılı geçtiyse ev sahibi, emsal kiralara göre belirleme için dava açabilir; sınır bu durumda bağlayıcı değildir.")
-    s.notlar.append("Oran, kira yılının başladığı aydan önceki ay için TÜİK'in açıkladığı on iki aylık ortalama TÜFE değişimidir.")
+    s.notlar.append("Uygulamada oran, yeni kira yılından önceki son ay için TÜİK'in açıkladığı on iki aylık ortalamalara göre TÜFE değişimidir.")
     return s
 
 

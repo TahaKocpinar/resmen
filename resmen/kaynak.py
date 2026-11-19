@@ -14,7 +14,8 @@ from pathlib import Path
 
 from . import mevzuat
 
-REF = re.compile(r"\[\^([A-Za-z0-9_-]+)\](?!:)")
+REF = re.compile(r"\[\^([A-Za-z0-9_-]+)\]")
+FOOTDEF = re.compile(r"^\[\^[^\]]+\]:.*$", re.M)
 BLOCK = re.compile(r"(<!-- resmen:(\S+) -->\n)(.*?)(<!-- /resmen -->)", re.S)
 
 
@@ -82,6 +83,8 @@ class Repo:
     def label(self, pin: Pin) -> str:
         if pin.is_law:
             ad = self.kanunlar.get(pin.kanun, {}).get("ad", "")
+            if pin.madde == "dipnotlar":
+                return f"{pin.kanun} sayılı {ad}, değişiklik dipnotları"
             kind, _, no = pin.madde.rpartition(" ")
             return f"{pin.kanun} sayılı {ad}, " + (f"{kind} md. {no}" if kind else f"md. {no}")
         return pin.baslik or pin.url
@@ -298,7 +301,7 @@ def _article_order(madde: str) -> tuple:
 
 
 def _ordered_refs(text: str) -> list[str]:
-    body = BLOCK.sub("", text)
+    body = FOOTDEF.sub("", BLOCK.sub("", text))
     seen: dict[str, None] = {}
     for m in REF.finditer(body):
         seen.setdefault(m.group(1), None)

@@ -66,6 +66,12 @@ madde = "74"
 alinti = "Kadın işçilerin doğumdan önce sekiz ve doğumdan sonra onaltı hafta olmak üzere toplam yirmidört haftalık süre için çalıştırılmamaları esastır."
 
 [[pin]]
+id = "4857-74-iki-hafta"
+kanun = "4857"
+madde = "74"
+alinti = "Ancak, sağlık durumu uygun olduğu takdirde, doktorun onayı ile kadın işçi isterse doğumdan önceki iki haftaya kadar işyerinde çalışabilir. Bu durumda, kadın işçinin çalıştığı süreler doğum sonrası sürelere eklenir."
+
+[[pin]]
 id = "4857-74-kontrol"
 kanun = "4857"
 madde = "74"
@@ -246,7 +252,10 @@ alinti = "on yıllık uzama süresi sonunda kiraya veren, bu süreyi izleyen her
 id = "6098-350-ihtiyac"
 kanun = "6098"
 madde = "350"
-alinti = "Kiralananı kendisi, eşi, altsoyu, üstsoyu veya kanun gereği bakmakla yükümlü olduğu diğer kişiler için konut ya da işyeri gereksinimi sebebiyle kullanma zorunluluğu varsa"
+alinti = [
+  "Kiralananı kendisi, eşi, altsoyu, üstsoyu veya kanun gereği bakmakla yükümlü olduğu diğer kişiler için konut ya da işyeri gereksinimi sebebiyle kullanma zorunluluğu varsa",
+  "belirli süreli sözleşmelerde sürenin sonunda, belirsiz süreli sözleşmelerde kiraya ilişkin genel hükümlere göre fesih dönemine ve fesih bildirimi için öngörülen sürelere uyularak belirlenecek tarihten başlayarak bir ay içinde açacağı dava ile sona erdirebilir.",
+]
 
 [[pin]]
 id = "6098-352-taahhut"
@@ -282,6 +291,12 @@ id = "5490-15-otuz-gun"
 kanun = "5490"
 madde = "15"
 alinti = "Sağ olarak dünyaya gelen her çocuğun, doğumdan itibaren Türkiye’de otuz gün içinde nüfus müdürlüğüne, yurt dışında ise altmış gün içinde dış temsilciliğe bildirilmesi zorunludur. Doğum bildirimleri, doğumu gerçekleştiren sağlık kuruluşlarına da yapılabilir."
+
+[[pin]]
+id = "5490-15-bes-gun"
+kanun = "5490"
+madde = "15"
+alinti = "Sağlık kuruluşları ve sağlık kuruluşları dışında sağlık personeli nezaretinde gerçekleşen doğumlar, ilgili sağlık birimince bulunulan yer nüfus müdürlüğüne beş iş günü içinde bildirilir."
 
 [[pin]]
 id = "5490-15-ad"
@@ -326,3 +341,29 @@ id = "turmob-damga"
 url = "https://www.turmob.org.tr/ekutuphane/download/4bca3949-fb63-40cd-90c6-3f5e2a0e69d4"
 baslik = "TÜRMOB, 1 Temmuz 2026'dan itibaren vergiden istisna kıdem tazminatı tutarı"
 alinti = "sadece damga vergisi kesintisi (binde 7,59 oranında) yapılması gerekmektedir."
+
+# --- Değişiklik dipnotları (hangi kanun neyi değiştirdi) ---------------------
+
+[[pin]]
+id = "4857-dipnot-7578-dogum"
+kanun = "4857"
+madde = "dipnotlar"
+alinti = "22/4/2026 tarihli ve 7578 sayılı Kanunun 15 inci maddesiyle birinci fıkranın birinci cümlesinde yer alan “doğumdan sonra sekiz” ibaresi “doğumdan sonra onaltı” şeklinde, “toplam onaltı” ibaresi “toplam yirmidört” şeklinde"
+
+[[pin]]
+id = "4857-dipnot-7578-babalik"
+kanun = "4857"
+madde = "dipnotlar"
+alinti = "22/4/2026 tarihli ve 7578 sayılı Kanunun 16 ncı maddesiyle bu fıkrada yer alan “beş” ibaresi “on” şeklinde değiştirilmiştir."
+
+[[pin]]
+id = "6098-g1-yuzde-25"
+kanun = "6098"
+madde = "geçici 1"
+alinti = "Konut kiraları bakımından bu maddenin yürürlüğe girdiği tarih ilâ 1/7/2023 (bu tarih dâhil) tarihleri arasında yenilenen kira dönemlerinde uygulanacak kira bedeline ilişkin anlaşmalar, bir önceki kira yılına ait kira bedelinin yüzde yirmi beşini geçmemek koşuluyla geçerlidir."
+
+[[pin]]
+id = "6098-g2-yuzde-25"
+kanun = "6098"
+madde = "geçici 2"
+alinti = "Konut kiraları bakımından 2/7/2023 ilâ 1/7/2024 (bu tarihler dâhil) tarihleri arasında yenilenen kira dönemlerinde uygulanacak kira bedeline ilişkin anlaşmalar, bir önceki kira yılına ait kira bedelinin yüzde yirmi beşini geçmemek koşuluyla geçerlidir."

@@ -14,9 +14,11 @@ PAGE = BASE + "/mevzuat?MevzuatNo={no}&MevzuatTur={tur}&MevzuatTertip={tertip}"
 UA = "Mozilla/5.0 (compatible; resmen; +https://github.com/TahaKocpinar/resmen)"
 
 _ARTICLE = re.compile(
-    r"(?:^|\n)[ \t]*((?:ek|geçici)[ \t]+)?madde[ \t\n]+(\d+(?:/[A-ZÇĞİÖŞÜ])?)[ \t]*[-–—]",
+    r"(?:^|\n)[ \t]*((?:ek|geçici)[ \t\n]+)?madde[ \t\n]+(\d+(?:/[A-ZÇĞİÖŞÜ])?)[ \t]*[-–—]",
     re.IGNORECASE,
 )
+
+_NOTES = re.compile(r"\n\[1\] ")
 
 
 def page_url(no: str, tur: int = 1, tertip: int = 5) -> str:
@@ -57,17 +59,23 @@ def article_key(prefix: str | None, number: str) -> str:
 
 
 def split_articles(text: str) -> dict[str, str]:
-    """Map article keys ("17", "ek 3", "geçici 1", "18/B") to their text.
+    """Map article keys ("17", "ek 3", "geçici 1", "18/B", "dipnotlar") to their text.
 
     Each slice runs to the next article heading, so it may end with the
     caption of the following article; quotes never span that far.
     """
     matches = list(_ARTICLE.finditer(text))
     out: dict[str, str] = {}
+    notes = _NOTES.search(text, matches[-1].end()) if matches else None
+    tail = notes.start() if notes else len(text)
     for i, m in enumerate(matches):
         key = article_key(m.group(1), m.group(2).upper())
-        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        end = matches[i + 1].start() if i + 1 < len(matches) else tail
         out.setdefault(key, text[m.start():end].strip())
+    if notes:
+        # Amendment footnotes ("[24] 22/4/2026 tarihli ve 7578 sayılı Kanunun ...")
+        # are the only place that says which law changed a sentence and when.
+        out["dipnotlar"] = text[notes.start():].strip()
     return out
 
 
