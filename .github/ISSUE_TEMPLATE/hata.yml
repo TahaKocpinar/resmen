@@ -1,0 +1,18 @@
+name: Yanlış ya da eski bilgi
+description: Bir rehberde kanunla uyuşmayan bir cümle var
+labels: [hata]
+body:
+  - type: input
+    id: yer
+    attributes:
+      label: Dosya ve cümle
+      placeholder: rehber/kira.md, "Depozito en fazla 3 aylık kira"
+    validations:
+      required: true
+  - type: textarea
+    id: kaynak
+    attributes:
+      label: Doğrusu ve kaynağı
+      description: mevzuat.gov.tr bağlantısı, madde numarası ya da Resmî Gazete sayısı. Kaynaksız düzeltme eklenemiyor.
+    validations:
+      required: true

@@ -1,0 +1,21 @@
+name: Yeni rehber önerisi
+description: Kaynaklı rehberi olmayan bir hayat olayı
+labels: [rehber]
+body:
+  - type: input
+    id: olay
+    attributes:
+      label: Olay
+      placeholder: "Trafik kazası geçirdim"
+    validations:
+      required: true
+  - type: textarea
+    id: sorular
+    attributes:
+      label: İnsanların sorduğu sorular
+      description: En fazla beş tane. Süre ve para soruları öncelikli.
+  - type: textarea
+    id: mevzuat
+    attributes:
+      label: Bildiğin ilgili mevzuat
+      placeholder: "2918 sayılı Karayolları Trafik Kanunu md. 85, 97"

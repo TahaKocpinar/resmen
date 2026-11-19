@@ -1,0 +1,4 @@
+- [ ] Yeni ya da değişen her hukuki cümlenin yanında bir `[^pin]` var.
+- [ ] Yeni pinlerin alıntısı mevzuat.gov.tr metninden kopyalandı, kendi cümlem değil.
+- [ ] `python -m resmen guncelle --yaz`, `python -m resmen dipnot` ve `python -m resmen kontrol` çalıştı (0 hata).
+- [ ] Tutar eklediysem dönemi (`baslangic`, `bitis`) ve resmî kaynağı var.

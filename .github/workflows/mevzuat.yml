@@ -1,0 +1,40 @@
+name: mevzuat
+
+# Re-reads every cited article on mevzuat.gov.tr and every cited document.
+# If a quoted sentence is gone or an article's text changed, it opens (or
+# updates) one issue with the diff. Unreachable sources only show up in the log.
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # Mondays 07:17 Istanbul
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get install -y --no-install-recommends poppler-utils
+      - id: check
+        run: python -m resmen guncelle --rapor rapor.md
+        continue-on-error: true
+      - if: steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Kaynak metin değişti"
+          body="$(printf 'Haftalık kontrol %s tarihinde fark buldu. Pinleri ve rehberleri gözden geçirip `python -m resmen guncelle --yaz` ile kopyaları yenileyin.\n\n' "$(date -u +%F)"; cat rapor.md)"
+          num=$(gh issue list --state open --label kaynak-degisti --json number --jq '.[0].number')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body "$body"
+          else
+            gh label create kaynak-degisti --color d93f0b --force
+            gh issue create --title "$title" --label kaynak-degisti --body "$body"
+          fi
