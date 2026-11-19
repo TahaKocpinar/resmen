@@ -1,0 +1,88 @@
+# Amounts that change by period. Each row cites a pin from pinler.toml.
+# `resmen kontrol` warns once today's date is past the last row.
+
+[[asgari_ucret_brut]]
+baslangic = 2026-01-01
+bitis = 2026-12-31
+tutar = 33030.00
+kaynak = "csgb-asgari-2026"
+
+[[damga_vergisi_orani]]
+# 488 sayılı Kanun (1) sayılı tablo IV-1-b. mevzuat.gov.tr does not serve
+# that law as text, so the rate is pinned to TÜRMOB's circular instead.
+baslangic = 2021-01-01
+bitis = 2026-12-31
+tutar = 0.00759
+kaynak = "turmob-damga"
+
+[[kidem_tavani]]
+baslangic = 2021-01-01
+bitis = 2021-06-30
+tutar = 7638.96
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2021-07-01
+bitis = 2021-12-31
+tutar = 8284.51
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2022-01-01
+bitis = 2022-06-30
+tutar = 10848.59
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2022-07-01
+bitis = 2022-12-31
+tutar = 15371.40
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2023-01-01
+bitis = 2023-06-30
+tutar = 19982.83
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2023-07-01
+bitis = 2023-12-31
+tutar = 23489.83
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2024-01-01
+bitis = 2024-06-30
+tutar = 35058.58
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2024-07-01
+bitis = 2024-12-31
+tutar = 41828.42
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2025-01-01
+bitis = 2025-06-30
+tutar = 46655.43
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2025-07-01
+bitis = 2025-12-31
+tutar = 53919.68
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2026-01-01
+bitis = 2026-06-30
+tutar = 64948.77
+kaynak = "csgb-kidem-tablo"
+
+[[kidem_tavani]]
+baslangic = 2026-07-01
+bitis = 2026-12-31
+tutar = 73729.87
+kaynak = "csgb-kidem-2026-07"

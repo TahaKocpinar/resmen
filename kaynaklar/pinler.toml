@@ -1,0 +1,328 @@
+# Every [^id] in rehber/*.md points to one of these. `alinti` must appear,
+# word for word (whitespace and footnote markers aside), in the official text.
+# `resmen kontrol` checks that offline against kaynaklar/metin/, the weekly
+# workflow checks it against mevzuat.gov.tr.
+
+# --- İş Kanunu 4857 ---------------------------------------------------------
+
+[[pin]]
+id = "4857-17-sureler"
+kanun = "4857"
+madde = "17"
+alinti = """a) İşi altı aydan az sürmüş olan işçi için, bildirimin diğer tarafa yapılmasından başlayarak iki hafta sonra,
+b) İşi altı aydan birbuçuk yıla kadar sürmüş olan işçi için, bildirimin diğer tarafa yapılmasından başlayarak dört hafta sonra,
+c) İşi birbuçuk yıldan üç yıla kadar sürmüş olan işçi için, bildirimin diğer tarafa yapılmasından başlayarak altı hafta sonra,
+d) İşi üç yıldan fazla sürmüş işçi için, bildirim yapılmasından başlayarak sekiz hafta sonra, feshedilmiş sayılır."""
+
+[[pin]]
+id = "4857-17-tazminat"
+kanun = "4857"
+madde = "17"
+alinti = "Bildirim şartına uymayan taraf, bildirim süresine ilişkin ücret tutarında tazminat ödemek zorundadır."
+
+[[pin]]
+id = "4857-18-is-guvencesi"
+kanun = "4857"
+madde = "18"
+alinti = "Otuz veya daha fazla işçi çalıştıran işyerlerinde en az altı aylık kıdemi olan işçinin belirsiz süreli iş sözleşmesini fesheden işveren, işçinin yeterliliğinden veya davranışlarından ya da işletmenin, işyerinin veya işin gereklerinden kaynaklanan geçerli bir sebebe dayanmak zorundadır."
+
+[[pin]]
+id = "4857-20-bir-ay"
+kanun = "4857"
+madde = "20"
+alinti = "fesih bildiriminin tebliği tarihinden itibaren bir ay içinde işe iade talebiyle, İş Mahkemeleri Kanunu hükümleri uyarınca arabulucuya başvurmak zorundadır."
+
+[[pin]]
+id = "4857-20-iki-hafta"
+kanun = "4857"
+madde = "20"
+alinti = "son tutanağın düzenlendiği tarihten itibaren, iki hafta içinde iş mahkemesinde dava açılabilir."
+
+[[pin]]
+id = "4857-53-sureler"
+kanun = "4857"
+madde = "53"
+alinti = """a) Bir yıldan beş yıla kadar (beş yıl dahil) olanlara ondört günden,
+b) Beş yıldan fazla onbeş yıldan az olanlara yirmi günden,
+c) Onbeş yıl (dahil) ve daha fazla olanlara yirmialtı günden,
+Az olamaz."""
+
+[[pin]]
+id = "4857-53-yas"
+kanun = "4857"
+madde = "53"
+alinti = "Ancak onsekiz ve daha küçük yaştaki işçilerle elli ve daha yukarı yaştaki işçilere verilecek yıllık ücretli izin süresi yirmi günden az olamaz."
+
+[[pin]]
+id = "4857-59-ucret"
+kanun = "4857"
+madde = "59"
+alinti = "İş sözleşmesinin, herhangi bir nedenle sona ermesi halinde işçinin hak kazanıp da kullanmadığı yıllık izin sürelerine ait ücreti, sözleşmenin sona erdiği tarihteki ücreti üzerinden kendisine veya hak sahiplerine ödenir."
+
+[[pin]]
+id = "4857-74-dogum"
+kanun = "4857"
+madde = "74"
+alinti = "Kadın işçilerin doğumdan önce sekiz ve doğumdan sonra onaltı hafta olmak üzere toplam yirmidört haftalık süre için çalıştırılmamaları esastır."
+
+[[pin]]
+id = "4857-74-kontrol"
+kanun = "4857"
+madde = "74"
+alinti = "Hamilelik süresince kadın işçiye periyodik kontroller için ücretli izin verilir."
+
+[[pin]]
+id = "4857-74-yarim"
+kanun = "4857"
+madde = "74"
+alinti = "birinci doğumda altmış gün, ikinci doğumda yüz yirmi gün, sonraki doğumlarda ise yüz seksen gün süreyle haftalık çalışma süresinin yarısı kadar ücretsiz izin verilir."
+
+[[pin]]
+id = "4857-74-alti-ay"
+kanun = "4857"
+madde = "74"
+alinti = "İsteği halinde kadın işçiye, yirmidört haftalık sürenin tamamlanmasından veya çoğul gebelik halinde yirmialtı haftalık süreden sonra altı aya kadar ücretsiz izin verilir."
+
+[[pin]]
+id = "4857-74-sut"
+kanun = "4857"
+madde = "74"
+alinti = "Kadın işçilere bir yaşından küçük çocuklarını emzirmeleri için günde toplam birbuçuk saat süt izni verilir."
+
+[[pin]]
+id = "4857-ek2-babalik"
+kanun = "4857"
+madde = "ek 2"
+alinti = "eşinin doğum yapması hâlinde ise on gün ücretli izin verilir."
+
+[[pin]]
+id = "4857-ek3-zamanasimi"
+kanun = "4857"
+madde = "ek 3"
+alinti = """yıllık izin ücreti ve aşağıda belirtilen tazminatların zamanaşımı süresi beş yıldır.
+a) Kıdem tazminatı.
+b) İş sözleşmesinin bildirim şartına uyulmaksızın feshinden kaynaklanan tazminat."""
+
+[[pin]]
+id = "4857-gecici1-atif"
+kanun = "4857"
+madde = "geçici 1"
+alinti = "anılan Kanunun 16, 17 ve 26 ncı maddelerine yapılan atıflar, bu Kanunun 24, 25 ve 32 nci maddelerine yapılmış sayılır."
+
+# --- 1475 md. 14 (kıdem tazminatı) ------------------------------------------
+
+[[pin]]
+id = "1475-14-haller"
+kanun = "1475"
+madde = "14"
+alinti = """1. İşveren tarafından bu Kanunun 17 nci maddesinin II numaralı bendinde gösterilen sebepler dışında,
+2. İşçi tarafından bu Kanunun 16 ncı maddesi uyarınca,
+3. Muvazzaf askerlik hizmeti dolayısıyle,"""
+
+[[pin]]
+id = "1475-14-evlilik"
+kanun = "1475"
+madde = "14"
+alinti = "kadının evlendiği tarihten itibaren bir yıl içerisinde kendi arzusu ile sona erdirmesi veya işçinin ölümü sebebiyle son bulması"
+
+[[pin]]
+id = "1475-14-otuz-gun"
+kanun = "1475"
+madde = "14"
+alinti = "her geçen tam yıl için işverence işçiye 30 günlük ücreti tutarında kıdem tazminatı ödenir."
+
+[[pin]]
+id = "1475-14-artan-sure"
+kanun = "1475"
+madde = "14"
+alinti = "Bir yıldan artan süreler için de aynı oran üzerinden ödeme yapılır."
+
+[[pin]]
+id = "1475-14-tavan"
+kanun = "1475"
+madde = "14"
+alinti = "Devlet Memurları Kanununa tabi en yüksek Devlet memuruna 5434 sayılı T.C. Emekli Sandığı Kanunu hükümlerine göre bir hizmet yılı için ödenecek azami emeklilik ikramiyesini geçemez."
+
+# --- 4447 İşsizlik Sigortası ------------------------------------------------
+
+[[pin]]
+id = "4447-48-otuz-gun"
+kanun = "4447"
+madde = "48"
+alinti = "hizmet akdinin feshedildiği tarihi izleyen günden itibaren otuz gün içinde Kuruma doğrudan veya elektronik ortamda başvurması gerekir. Mücbir sebepler dışında, başvuruda gecikilen süre işsizlik ödeneği almaya hak kazanılan toplam süreden düşülür."
+
+[[pin]]
+id = "4447-50-yuzde-kirk"
+kanun = "4447"
+madde = "50"
+alinti = "Günlük işsizlik ödeneği, sigortalının son dört aylık prime esas kazançları dikkate alınarak hesaplanan günlük ortalama brüt kazancının yüzde kırkıdır."
+
+[[pin]]
+id = "4447-50-tavan"
+kanun = "4447"
+madde = "50"
+alinti = "onaltı yaşından büyük işçiler için uygulanan aylık asgari ücretin brüt tutarının yüzde seksenini geçemez."
+
+[[pin]]
+id = "4447-50-sureler"
+kanun = "4447"
+madde = "50"
+alinti = """Hizmet akdinin sona ermesinden önceki son 120 gün hizmet akdine tabi olanlardan, son üç yıl içinde;
+a) 600 gün sigortalı olarak çalışıp işsizlik sigortası primi ödemiş olan sigortalı işsizlere 180 gün,
+b) 900 gün sigortalı olarak çalışıp işsizlik sigortası primi ödemiş olan sigortalı işsizlere 240 gün,
+c) 1080 gün sigortalı olarak çalışıp işsizlik sigortası primi ödemiş olan sigortalı işsizlere 300 gün,"""
+
+[[pin]]
+id = "4447-50-odeme"
+kanun = "4447"
+madde = "50"
+alinti = "İşsizlik ödeneği, her ayın beşinde aylık olarak işsizin kendisine ödenir."
+
+[[pin]]
+id = "4447-50-damga"
+kanun = "4447"
+madde = "50"
+alinti = "İşsizlik ödeneği damga vergisi hariç herhangi bir vergi ve kesintiye tabi tutulmaz."
+
+[[pin]]
+id = "4447-51-sartlar"
+kanun = "4447"
+madde = "51"
+alinti = "Kuruma süresi içinde şahsen başvurarak yeni bir iş almaya hazır olduklarını kaydettirmeleri ve bu Kanunda yer alan prim ödeme koşullarını sağlamış olmaları kaydıyla işsizlik ödeneği almaya hak kazanırlar."
+
+# --- 7036 İş Mahkemeleri ----------------------------------------------------
+
+[[pin]]
+id = "7036-3-arabulucu"
+kanun = "7036"
+madde = "3"
+alinti = "Kanuna, bireysel veya toplu iş sözleşmesine dayanan işçi veya işveren alacağı ve tazminatı ile işe iade talebiyle açılan davalarda, arabulucuya başvurulmuş olması dava şartıdır."
+
+# --- 6098 Türk Borçlar Kanunu (kira) ----------------------------------------
+
+[[pin]]
+id = "6098-342-guvence"
+kanun = "6098"
+madde = "342"
+alinti = "Konut ve çatılı işyeri kiralarında sözleşmeyle kiracıya güvence verme borcu getirilmişse, bu güvence üç aylık kira bedelini aşamaz."
+
+[[pin]]
+id = "6098-342-banka"
+kanun = "6098"
+madde = "342"
+alinti = "kiracı, kiraya verenin onayı olmaksızın çekilmemek üzere, parayı vadeli bir tasarruf hesabına yatırır"
+
+[[pin]]
+id = "6098-342-uc-ay"
+kanun = "6098"
+madde = "342"
+alinti = "Kiraya veren, kira sözleşmesinin sona ermesini izleyen üç ay içinde kiracıya karşı kira sözleşmesiyle ilgili bir dava açtığını veya icra ya da iflas yoluyla takibe giriştiğini bankaya yazılı olarak bildirmemişse banka, kiracının istemi üzerine güvenceyi geri vermekle yükümlüdür."
+
+[[pin]]
+id = "6098-344-tufe"
+kanun = "6098"
+madde = "344"
+alinti = "Tarafların yenilenen kira dönemlerinde uygulanacak kira bedeline ilişkin anlaşmaları, bir önceki kira yılında tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranını geçmemek koşuluyla geçerlidir."
+
+[[pin]]
+id = "6098-344-bes-yil"
+kanun = "6098"
+madde = "344"
+alinti = "beş yıldan uzun süreli veya beş yıldan sonra yenilenen kira sözleşmelerinde ve bundan sonraki her beş yılın sonunda, yeni kira yılında uygulanacak kira bedeli, hâkim tarafından tüketici fiyat endeksindeki oniki aylık ortalamalara göre değişim oranı, kiralananın durumu ve emsal kira bedelleri göz önünde tutularak hakkaniyete uygun biçimde belirlenir."
+
+[[pin]]
+id = "6098-347-uzama"
+kanun = "6098"
+madde = "347"
+alinti = "kiracı, belirli süreli sözleşmelerin süresinin bitiminden en az onbeş gün önce bildirimde bulunmadıkça, sözleşme aynı koşullarla bir yıl için uzatılmış sayılır. Kiraya veren, sözleşme süresinin bitimine dayanarak sözleşmeyi sona erdiremez."
+
+[[pin]]
+id = "6098-347-on-yil"
+kanun = "6098"
+madde = "347"
+alinti = "on yıllık uzama süresi sonunda kiraya veren, bu süreyi izleyen her uzama yılının bitiminden en az üç ay önce bildirimde bulunmak koşuluyla, herhangi bir sebep göstermeksizin sözleşmeye son verebilir."
+
+[[pin]]
+id = "6098-350-ihtiyac"
+kanun = "6098"
+madde = "350"
+alinti = "Kiralananı kendisi, eşi, altsoyu, üstsoyu veya kanun gereği bakmakla yükümlü olduğu diğer kişiler için konut ya da işyeri gereksinimi sebebiyle kullanma zorunluluğu varsa"
+
+[[pin]]
+id = "6098-352-taahhut"
+kanun = "6098"
+madde = "352"
+alinti = "kiralananı belli bir tarihte boşaltmayı yazılı olarak üstlendiği hâlde boşaltmamışsa kiraya veren, kira sözleşmesini bu tarihten başlayarak bir ay içinde icraya başvurmak veya dava açmak suretiyle sona erdirebilir."
+
+[[pin]]
+id = "6098-352-iki-ihtar"
+kanun = "6098"
+madde = "352"
+alinti = "kira bedelini ödemediği için kendisine yazılı olarak iki haklı ihtarda bulunulmasına sebep olmuşsa"
+
+[[pin]]
+id = "6098-352-konut"
+kanun = "6098"
+madde = "352"
+alinti = "Kiracının veya birlikte yaşadığı eşinin aynı ilçe veya belde belediye sınırları içinde oturmaya elverişli bir konutu bulunması durumunda kiraya veren, kira sözleşmesinin kurulması sırasında bunu bilmiyorsa"
+
+# --- 6325 Arabuluculuk ------------------------------------------------------
+
+[[pin]]
+id = "6325-18B-kira"
+kanun = "6325"
+madde = "18/B"
+alinti = """Aşağıdaki uyuşmazlıklarda, dava açılmadan önce arabulucuya başvurulmuş olması dava şartıdır:
+a) Kiralanan taşınmazların 2004 sayılı Kanuna göre ilamsız icra yoluyla tahliyesine ilişkin hükümler hariç olmak üzere, kira ilişkisinden kaynaklanan uyuşmazlıklar."""
+
+# --- 5490 Nüfus Hizmetleri --------------------------------------------------
+
+[[pin]]
+id = "5490-15-otuz-gun"
+kanun = "5490"
+madde = "15"
+alinti = "Sağ olarak dünyaya gelen her çocuğun, doğumdan itibaren Türkiye’de otuz gün içinde nüfus müdürlüğüne, yurt dışında ise altmış gün içinde dış temsilciliğe bildirilmesi zorunludur. Doğum bildirimleri, doğumu gerçekleştiren sağlık kuruluşlarına da yapılabilir."
+
+[[pin]]
+id = "5490-15-ad"
+kanun = "5490"
+madde = "15"
+alinti = "Çocuğa konulan ad, üç adı geçmemek üzere ve kısaltma yapılmadan yazılır."
+
+# --- Tutarlar (resmî duyuru belgeleri) --------------------------------------
+
+[[pin]]
+id = "csgb-asgari-2026"
+url = "https://www.csgb.gov.tr/Media/gm2fekds/asgari-%C3%BCcret-2026.pdf"
+baslik = "ÇSGB, Asgari Ücretin Net Hesabı ve İşverene Maliyeti (01.01.2026 – 31.12.2026)"
+alinti = ["01.01.2026 - 31.12.2026", "BRÜT ASGARİ ÜCRET 33.030,00"]
+
+[[pin]]
+id = "csgb-kidem-tablo"
+url = "https://www.csgb.gov.tr/Media/zewm15ah/kidem-tazminati-yillar-1980-2026.pdf"
+baslik = "ÇSGB, Kıdem Tazminatı Tavan Miktarları (1980 – 2026)"
+alinti = [
+  "01.01.2021 - 30.06.2021 (**) 7.638,96",
+  "01.07.2021 - 31.12.2021 (**) 8.284,51",
+  "01.01.2022 - 30.06.2022 (**) 10.848,59",
+  "01.07.2022 - 31.12.2022 (**) 15.371,40",
+  "01.01.2023 - 30.06.2023 (**) 19.982,83",
+  "01.07.2023 - 31.12.2023 (**) 23.489,83",
+  "01.01.2024 - 30.06.2024 (**) 35.058,58",
+  "01.07.2024 - 31.12.2024 (**) 41.828,42",
+  "01.01.2025 - 30.06.2025 (**) 46.655,43",
+  "01.07.2025 - 31.12.2025 (**) 53.919,68",
+  "01.01.2026 - 30.06.2026 (**) 64.948,77",
+]
+
+[[pin]]
+id = "csgb-kidem-2026-07"
+url = "https://www.csgb.gov.tr/Media/5vuhphpb/k%C4%B1dem-tazminat%C4%B1-2026_temmuz-d%C3%B6nem.pdf"
+baslik = "ÇSGB, Kıdem Tazminatı (01.07.2026 itibarıyla tavan hesabı)"
+alinti = ["01.07.2026 tarihi itibarıyla", "= 73.729,87"]
+
+[[pin]]
+id = "turmob-damga"
+url = "https://www.turmob.org.tr/ekutuphane/download/4bca3949-fb63-40cd-90c6-3f5e2a0e69d4"
+baslik = "TÜRMOB, 1 Temmuz 2026'dan itibaren vergiden istisna kıdem tazminatı tutarı"
+alinti = "sadece damga vergisi kesintisi (binde 7,59 oranında) yapılması gerekmektedir."
