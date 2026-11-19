@@ -210,7 +210,8 @@ class Repo:
                 report.append({"kaynak": f"{no} sayılı Kanun", "durum": "erişilemedi", "ayrinti": str(e)})
                 continue
             for madde in sorted({p.madde for p in pins}, key=_article_order):
-                item = {"kaynak": f"{no} md. {madde}", "pinler": [], "diff": ""}
+                name = f"{no} dipnotlar" if madde == "dipnotlar" else f"{no} md. {madde}"
+                item = {"kaynak": name, "pinler": [], "diff": ""}
                 live = arts.get(madde)
                 group = [p for p in pins if p.madde == madde]
                 if live is None:
