@@ -45,5 +45,11 @@ class NormalizeTest(unittest.TestCase):
         self.assertEqual(mevzuat.normalize("“beş” ibaresi ‘on’"), '"beş" ibaresi \'on\'')
 
 
+class LineEndingTest(unittest.TestCase):
+    def test_crlf_page_splits_like_lf_page(self):
+        crlf = PAGE.replace("\n", "\r\n")
+        self.assertEqual(mevzuat.split_articles(mevzuat.to_text(crlf)), mevzuat.split_articles(mevzuat.to_text(PAGE)))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -2,9 +2,9 @@
 from __future__ import annotations
 
 import html
+import http.client
 import re
 import time
-import urllib.error
 import urllib.request
 
 BASE = "https://www.mevzuat.gov.tr"
@@ -25,9 +25,9 @@ def page_url(no: str, tur: int = 1, tertip: int = 5) -> str:
     return PAGE.format(no=no, tur=tur, tertip=tertip)
 
 
-def fetch(no: str, tur: int = 1, tertip: int = 5, attempts: int = 5, timeout: int = 60) -> str:
-    # mevzuat.gov.tr drops a fair share of connections; backing off and retrying
-    # is enough in practice, it rarely needs more than three tries.
+def fetch(no: str, tur: int = 1, tertip: int = 5, attempts: int = 6, timeout: int = 60) -> str:
+    # mevzuat.gov.tr drops a fair share of connections (resets, truncated TLS
+    # records); backing off and retrying is usually enough.
     url = IFRAME.format(no=no, tur=tur, tertip=tertip)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     last: Exception | None = None
@@ -35,13 +35,15 @@ def fetch(no: str, tur: int = 1, tertip: int = 5, attempts: int = 5, timeout: in
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read().decode("utf-8", errors="replace")
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        except (OSError, http.client.HTTPException) as e:
             last = e
-            time.sleep(min(2**i, 20))
+            time.sleep(min(3 * 2**i, 30))
     raise RuntimeError(f"mevzuat.gov.tr: {no} could not be fetched ({last})")
 
 
 def to_text(page: str) -> str:
+    # The server sends CRLF; every pattern below assumes bare \n.
+    page = page.replace("\r\n", "\n").replace("\r", "\n")
     page = re.sub(r"<(script|style)\b.*?</\1>", " ", page, flags=re.S | re.I)
     page = re.sub(r"<(br|p|/p|div|/div|tr|/tr)\b[^>]*>", "\n", page, flags=re.I)
     text = html.unescape(re.sub(r"<[^>]+>", "", page))
