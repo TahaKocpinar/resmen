@@ -11,7 +11,7 @@
 
 Mevzuat değişiyor, rehberler değişmiyor. 22 Nisan 2026 tarihli 7578 sayılı Kanun doğum sonrası izni 8 haftadan 16 haftaya, babalık iznini 5 günden 10 güne çıkardı; bundan önce yazılmış her rehber artık yanlış. Kıdem tavanı yılda iki kez değişiyor ve ikincil kaynaklar birbirini tutmuyor: arama sonuçlarında çıkan bir hukuk bürosu yazısı 2025'in ilk yarısı için 47.486,51 TL diyor, ÇSGB'nin kendi tablosu 46.655,43 TL.
 
-resmen bu yüzden cümleyi değil kaynağı saklıyor. Rehberdeki her hukuki cümlenin sonunda bir dipnot var; dipnot, kanun maddesinden kopyalanmış bir alıntıya ve maddenin kendisine gidiyor. Madde değişip alıntı metinden düşerse CI kırmızıya dönüyor ve haftalık iş akışı farkı gösteren bir issue açıyor.
+resmen bu yüzden cümleyi değil kaynağı saklıyor. Rehberdeki her hukuki cümlenin sonunda bir dipnot var; dipnot, kanun maddesinden kopyalanmış bir alıntıya ve maddenin kendisine gidiyor. Madde değişip alıntı metinden düşerse haftalık kontrol kırmızıya dönüyor ve farkı gösteren bir issue açıyor.
 
 > Hukuki danışmanlık değildir. Kendi durumun için avukata, İŞKUR'a ya da ilgili kuruma danış. Yanlış bir şey görürsen kaynağıyla birlikte [issue aç](https://github.com/TahaKocpinar/resmen/issues/new/choose).
 
@@ -84,7 +84,7 @@ Bugün 7 kanundan 23 madde, 4 resmî belge, 53 pin ve 66 alıntı var; 37 test. 
 
 ## Ajanlar için
 
-[skills/resmen/SKILL.md](skills/resmen/SKILL.md), Claude Code, Codex ve benzeri araçlara cevabı bu rehberlerden ve hesap makinelerinden vermesini, maddeyi alıntılamasını ve rehberde olmayan konuyu hafızadan doldurmamasını söylüyor. Ajanlar 2026 değişikliklerinden önceki bilgiyle eğitildiği için ikincisi önemli.
+[skills/resmen/SKILL.md](skills/resmen/SKILL.md), Claude Code, Codex ve benzeri araçlara cevabı bu rehberlerden ve hesap makinelerinden vermesini, maddeyi alıntılamasını ve rehberde olmayan konuyu hafızadan doldurmamasını söylüyor. Modellerin çoğu 2026 değişikliklerinden önceki metinlerle eğitildi; ikincisi bu yüzden önemli.
 
 ## Bilinen sınırlar
 
