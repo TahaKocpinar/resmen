@@ -11,7 +11,7 @@ BASE = "https://www.mevzuat.gov.tr"
 # The public page wraps the text in an iframe; this is the iframe's own URL.
 IFRAME = BASE + "/anasayfa/MevzuatFihristDetayIframe?MevzuatTur={tur}&MevzuatNo={no}&MevzuatTertip={tertip}"
 PAGE = BASE + "/mevzuat?MevzuatNo={no}&MevzuatTur={tur}&MevzuatTertip={tertip}"
-UA = "Mozilla/5.0 (compatible; resmen; +https://github.com/TahaKocpinar/resmen)"
+UA = "Mozilla/5.0 (compatible; resmen; +https://github.com/tahakocp/resmen)"
 
 _ARTICLE = re.compile(
     r"(?:^|\n)[ \t]*((?:ek|geçici)[ \t\n]+)?madde[ \t\n]+(\d+(?:/[A-ZÇĞİÖŞÜ])?)[ \t]*[-–—]",

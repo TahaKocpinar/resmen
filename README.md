@@ -2,7 +2,7 @@
 
 **İşten çıkarılma, doğum ve kira için Türkçe, kaynaklı bir rehber. Her hukuki cümle kanunun resmî metninden birebir bir alıntıya bağlı; alıntılar her hafta mevzuat.gov.tr'ye karşı yeniden denetleniyor.**
 
-[![test](https://github.com/TahaKocpinar/resmen/actions/workflows/test.yml/badge.svg)](https://github.com/TahaKocpinar/resmen/actions/workflows/test.yml)
+[![test](https://github.com/tahakocp/resmen/actions/workflows/test.yml/badge.svg)](https://github.com/tahakocp/resmen/actions/workflows/test.yml)
 ![pin](https://img.shields.io/badge/alıntı-66-2b6cb0)
 ![kaynak](https://img.shields.io/badge/kaynak-7%20kanun%20·%204%20resmî%20belge-2b6cb0)
 ![lisans](https://img.shields.io/badge/lisans-MIT-555)
@@ -13,7 +13,7 @@ Mevzuat değişiyor, rehberler değişmiyor. 22 Nisan 2026 tarihli 7578 sayılı
 
 resmen bu yüzden cümleyi değil kaynağı saklıyor. Rehberdeki her hukuki cümlenin sonunda bir dipnot var; dipnot, kanun maddesinden kopyalanmış bir alıntıya ve maddenin kendisine gidiyor. Madde değişip alıntı metinden düşerse haftalık kontrol kırmızıya dönüyor ve farkı gösteren bir issue açıyor.
 
-> Hukuki danışmanlık değildir. Kendi durumun için avukata, İŞKUR'a ya da ilgili kuruma danış. Yanlış bir şey görürsen kaynağıyla birlikte [issue aç](https://github.com/TahaKocpinar/resmen/issues/new/choose).
+> Hukuki danışmanlık değildir. Kendi durumun için avukata, İŞKUR'a ya da ilgili kuruma danış. Yanlış bir şey görürsen kaynağıyla birlikte [issue aç](https://github.com/tahakocp/resmen/issues/new/choose).
 
 ## Hangi soru, hangi sayfa
 
@@ -30,7 +30,7 @@ resmen bu yüzden cümleyi değil kaynağı saklıyor. Rehberdeki her hukuki cü
 Python 3.11 ya da üstü yeterli, başka bağımlılık yok.
 
 ```console
-$ git clone https://github.com/TahaKocpinar/resmen && cd resmen
+$ git clone https://github.com/tahakocp/resmen && cd resmen
 $ python -m resmen kidem --giris 04.03.2019 --cikis 13.11.2026 --ucret 52000
 Kıdem tazminatı
   Hizmet süresi            7 yıl 8 ay 10 gün
